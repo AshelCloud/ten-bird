@@ -14,6 +14,7 @@ public class Anivia : MonoBehaviour
     public float speed = 1f;
     public float minDist = 1f;
 
+    [SerializeField]
     private int hp;
     public int HP
     {
@@ -36,7 +37,7 @@ public class Anivia : MonoBehaviour
 
     private void Awake()
     {
-        HP = 5;
+        HP = 3;
         isDie = false;
         index = 0;
         target = waypoints[index];
@@ -113,6 +114,7 @@ public class Anivia : MonoBehaviour
     private IEnumerator ActiveDeath(Collision collision)
     {
         collision.gameObject.GetComponent<Player>().animator.SetBool("Death", true);
+        collision.gameObject.GetComponent<Player>().isDeath = true;
 
         yield return new WaitForSeconds(3f);
 

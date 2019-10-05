@@ -7,6 +7,7 @@ public class MainUI : MonoBehaviour
 {
     public GameObject mainObject;
     public GameObject selectObject;
+    public GameObject credit;
 
     private void Start()
     {
@@ -29,6 +30,13 @@ public class MainUI : MonoBehaviour
 
     public void ShowCredit()
     {
-        
+        mainObject.SetActive(false);
+        credit.SetActive(true);
+    }
+
+    public void CloseCredit()
+    {
+        mainObject.SetActive(true);
+        credit.SetActive(false);
     }
 }

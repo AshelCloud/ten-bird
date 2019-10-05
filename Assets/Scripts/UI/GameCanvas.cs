@@ -5,7 +5,9 @@ using UnityEngine.UI;
 
 public class GameCanvas : MonoBehaviour
 {
+    public GameObject active;
     public Text firewoodText;
+    public GameObject beQuiet;
 
     private void Start()
     {

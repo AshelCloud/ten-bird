@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Firewood
   - Bullet
+  - Nest
   layers:
   - Default
   - TransparentFX

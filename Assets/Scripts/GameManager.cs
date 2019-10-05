@@ -36,6 +36,13 @@ public class GameManager : Singleton<GameManager>
         StartCoroutine(LoadYourAsyncScene(level));
     }
 
+    public GameCanvas GetGameCanvas()
+    {
+        GameCanvas canvas = GameObject.Find("Canvas").GetComponent<GameCanvas>();
+
+        return canvas;
+    }
+
     private IEnumerator LoadYourAsyncScene(int level)
     {
         var stage = Resources.Load<GameObject>("Prefabs/Stages/Stage0" + level.ToString());

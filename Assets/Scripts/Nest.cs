@@ -6,6 +6,7 @@ public class Nest : MonoBehaviour, IEventable
 {
     public void ActiveEvent()
     {
+        
     }
 
     private void OnTriggerEnter(Collider other)

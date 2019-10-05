@@ -31,6 +31,7 @@ public class Door : MonoBehaviour, IEventable
 
     public void ActiveEvent()
     {
+        SoundManager.Instance.PlayClip(Resources.Load<AudioClip>("Sounds/door_open"));
         Anima.SetBool("Open", true);
     }
 }

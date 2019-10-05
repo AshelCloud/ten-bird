@@ -10,9 +10,17 @@ public class Player : MonoBehaviour
     private Rigidbody rb;
     private Vector3 m_CamForward;
     public Animator animator;
+    public bool isDeath { get; set; }
+    public GameObject meshes;
+
+    public bool isClear {get; set;}
+
+    public GameObject ui;
 
     private void Awake()
     {
+        isClear = false;
+        isDeath = false;
         startPoint = Vector3.zero;
         rb = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
@@ -28,6 +36,8 @@ public class Player : MonoBehaviour
 
     void FixedUpdate()
     {
+        if(isDeath || isClear) { return; }
+
         float h = UltimateJoystick.GetHorizontalAxis("Move");
         float v = UltimateJoystick.GetVerticalAxis("Move");
 
@@ -47,9 +57,37 @@ public class Player : MonoBehaviour
         transform.Rotate(0f, h * rotationSpeed * Time.deltaTime, 0f);
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.CompareTag("Nest") && !isClear)
+        {
+            isClear = true;
+            StartCoroutine(Clear(other.transform.position));
+        }
+    }
+
+    private IEnumerator Clear(Vector3 position)
+    {
+        GameManager.Instance.GetGameCanvas().beQuiet.SetActive(true);
+        GameManager.Instance.GetGameCanvas().active.SetActive(false);
+        ui.SetActive(false);
+
+        yield return new WaitForSeconds(2.5f);
+
+        Instantiate(Resources.Load<GameObject>("Prefabs/Egg"), position, Quaternion.identity);
+        meshes.SetActive(false);
+        GameManager.Instance.GetGameCanvas().beQuiet.SetActive(false);
+
+        yield return new WaitForSeconds(0.5f);
+
+        GameManager.Instance.FadeAndLoadMainScene();
+    }
+
+
     public void ActiveAttack()
     {
-        if(animator.GetBool("Attack")) { return; }
+        if (isDeath || isClear) { return; }
+        if (animator.GetBool("Attack")) { return; }
 
         animator.SetBool("Attack", true);
         StartCoroutine(Attack());
@@ -63,7 +101,7 @@ public class Player : MonoBehaviour
         bullet.transform.position = transform.position;
         bullet.SetForward(transform.forward);
 
-        yield return new WaitForSeconds(0.55f);
+        yield return new WaitForSeconds(0.75f);
         
         animator.SetBool("Attack", false);
     }
