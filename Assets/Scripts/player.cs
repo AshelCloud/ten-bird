@@ -2,29 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class player : MonoBehaviour
+public class Player : MonoBehaviour
 {
-    public float Spend = 15.0f;
-    float h = 0.0f;
-    Vector3 dir;
-    private Transform mytransform = null;
+    public float Spend = 1f;
+    private Vector3 startPoint;
 
-    public GameObject bird_idle = null;
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
-        mytransform = GetComponent<Transform>();
+        startPoint = Vector3.zero;
     }
 
-    // Update is called once per frame
+    void Start()
+    {
+        startPoint = GameObject.Find("StartPoint").transform.position;
+        transform.position = startPoint;
+    }
+
     void Update()
     {
-        h = Input.GetAxis("Horizontal");
-        dir = new Vector3(h, 0, 0);
-
-        transform.position += dir * Spend * Time.deltaTime;
-        
-        
     }
 }
 

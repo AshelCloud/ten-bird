@@ -5,8 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : Singleton<GameManager>
 {
-    public int Level { get; set; }
-
     [SerializeField]
     private FadeImage _fade;
     private FadeImage Fade
@@ -38,8 +36,23 @@ public class GameManager : Singleton<GameManager>
         DontDestroyOnLoad(gameObject);
     }
 
-    private void LoadLevelScene()
+    public void LoadLevelScene(int level)
     {
-        
+        StartCoroutine(LoadYourAsyncScene(level));
+    }
+
+    private IEnumerator LoadYourAsyncScene(int level)
+    {
+        var stage = Resources.Load<GameObject>("Prefabs/Stages/Stage0" + level.ToString());
+        var pheonix = Resources.Load<GameObject>("Prefabs/Pheonix");
+
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("Game");
+
+        while (!asyncLoad.isDone)
+        {
+            yield return null;
+        }
+        Instantiate(stage);
+        Instantiate(pheonix);
     }
 }
