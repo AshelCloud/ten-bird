@@ -5,7 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     private Vector3 startPoint;
-    public float Spend = 1f;
+    public float speed = 1f;
     public float rotationSpeed = 1f;
     private Rigidbody rb;
     private Vector3 m_CamForward;
@@ -32,7 +32,7 @@ public class Player : MonoBehaviour
         float v = UltimateJoystick.GetVerticalAxis("Move");
 
         m_CamForward = Vector3.Scale(Camera.main.transform.forward, new Vector3(1, 0, 1)).normalized;
-        Vector3 move = v * m_CamForward + h * Camera.main.transform.right;
+        Vector3 move = v * m_CamForward + h * Camera.main.transform.right * speed;
         if(move == Vector3.zero)
         {
             animator.SetBool("Move", false);    
@@ -44,8 +44,28 @@ public class Player : MonoBehaviour
 
         rb.velocity = move;
 
-        
         transform.Rotate(0f, h * rotationSpeed * Time.deltaTime, 0f);
+    }
+
+    public void ActiveAttack()
+    {
+        if(animator.GetBool("Attack")) { return; }
+
+        animator.SetBool("Attack", true);
+        StartCoroutine(Attack());
+    }
+
+    private IEnumerator Attack()
+    {
+        yield return new WaitForSeconds(0.45f);
+
+        var bullet = Instantiate(Resources.Load<Bullet>("Prefabs/Bullet"));
+        bullet.transform.position = transform.position;
+        bullet.SetForward(transform.forward);
+
+        yield return new WaitForSeconds(0.55f);
+        
+        animator.SetBool("Attack", false);
     }
 }
 

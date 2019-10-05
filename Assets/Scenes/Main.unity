@@ -494,7 +494,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "1\uC2A4\uD14C\uC774\uC9C0"
+  m_Text: "\uC2DC\uC791\uC758 \uB358\uC804"
 --- !u!222 &206683547
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -896,7 +896,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 6ea771c06bf9fbc4b926d4f28db9d999, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1078,7 +1078,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "3\uC2A4\uD14C\uC774\uC9C0"
+  m_Text: "\uC601\uC6D0 \uBD88\uBA78"
 --- !u!222 &807836790
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1712,7 +1712,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "2\uC2A4\uD14C\uC774\uC9C0"
+  m_Text: "\uB530\uB73B\uD55C \uC0C8"
 --- !u!222 &1099933134
 CanvasRenderer:
   m_ObjectHideFlags: 0

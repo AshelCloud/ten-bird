@@ -17,4 +17,11 @@ public class SoundManager : Singleton<SoundManager>
     {
         Audio.PlayOneShot(clip);
     }
+
+    public void PlayLoop(AudioClip clip)
+    {
+        Audio.clip = clip;
+        Audio.loop = true;
+        Audio.Play();
+    }
 }

@@ -7,6 +7,11 @@ public class GameCanvas : MonoBehaviour
 {
     public Text firewoodText;
 
+    private void Start()
+    {
+        SoundManager.Instance.PlayLoop(Resources.Load<AudioClip>("Sounds/game_background"));
+    }
+
     private void Update()
     {
         int activeWoodCnt = 0;

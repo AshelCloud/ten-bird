@@ -14,8 +14,30 @@ public class Anivia : MonoBehaviour
     public float speed = 1f;
     public float minDist = 1f;
 
+    private int hp;
+    public int HP
+    {
+        get
+        {
+            return hp;            
+        }
+
+        set
+        {
+            hp = value;
+            if(hp <= 0)
+            {
+                isDie = true;
+            }
+        }
+    }
+
+    private bool isDie;
+
     private void Awake()
     {
+        HP = 5;
+        isDie = false;
         index = 0;
         target = waypoints[index];
         rb = GetComponent<Rigidbody>();
@@ -23,6 +45,8 @@ public class Anivia : MonoBehaviour
 
     private void Update()
     {
+        if(isDie) { return; }
+
         UpdateAgent();
         
         if(Vector3.Distance(target.transform.position, transform.position) < minDist)
@@ -67,6 +91,22 @@ public class Anivia : MonoBehaviour
         if(collision.gameObject.CompareTag("Player"))
         {
             StartCoroutine(ActiveDeath(collision));
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Bullet"))
+        {
+            Destroy(other.gameObject);
+
+            HP--;
+
+            if (isDie)
+            {
+                GetComponent<Animator>().SetBool("Death", true);
+                GetComponent<BoxCollider>().enabled = false;
+            }
         }
     }
 
