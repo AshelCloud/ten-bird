@@ -165,6 +165,7 @@ GameObject:
   - component: {fileID: 463148528816930978}
   - component: {fileID: 7559130224939789784}
   - component: {fileID: 2325972445240555003}
+  - component: {fileID: 8496199494051988665}
   m_Layer: 0
   m_Name: Firewood
   m_TagString: Untagged
@@ -226,6 +227,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.15, y: 0.1, z: 0.2}
   m_Center: {x: 0, y: 0.05, z: 0}
+--- !u!114 &8496199494051988665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3474024614193410737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d62f30e855e84c94d8fa6f47ac1abce2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fire: {fileID: 5443969180929627561}
 --- !u!1 &6421573906310739995
 GameObject:
   m_ObjectHideFlags: 0
@@ -685,6 +699,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05e07fd4259b287488ef9eeeff1edce6, type: 3}
+--- !u!1 &5443969180929627561 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4560934354682992977, guid: 05e07fd4259b287488ef9eeeff1edce6,
+    type: 3}
+  m_PrefabInstance: {fileID: 8414813730537032952}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &9067862577616971706 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 653277554930068290, guid: 05e07fd4259b287488ef9eeeff1edce6,
