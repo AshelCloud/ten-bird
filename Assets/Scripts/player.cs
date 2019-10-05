@@ -18,8 +18,9 @@ public class Player : MonoBehaviour
 
     void Start()
     {
-        //startPoint = GameObject.Find("StartPoint").transform.position;
-        //transform.position = startPoint;
+        startPoint = GameObject.Find("StartPoint").transform.position;
+        startPoint.y = 0.2f;
+        transform.position = startPoint;
     }
 
     void FixedUpdate()

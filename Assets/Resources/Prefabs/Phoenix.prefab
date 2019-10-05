@@ -25,8 +25,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 90091548}
-  m_LocalRotation: {x: -0.436594, y: 0.001320666, z: -0.0006393387, w: -0.8996575}
-  m_LocalPosition: {x: -0.07445508, y: 0.95124525, z: -0.60109794}
+  m_LocalRotation: {x: 0.31429166, y: -0.023325128, z: 0.007718133, w: 0.9490085}
+  m_LocalPosition: {x: 0.014342308, y: 0.38889468, z: -0.35329065}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5627605443991495835}
@@ -706,6 +706,7 @@ GameObject:
   - component: {fileID: 8296172668497089261}
   - component: {fileID: -197534732219721826}
   - component: {fileID: 1630755886314390272}
+  - component: {fileID: 1336795783}
   m_Layer: 0
   m_Name: Pheonix
   m_TagString: Untagged
@@ -767,7 +768,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!114 &-197534732219721826
 MonoBehaviour:
@@ -796,3 +797,17 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.2
   m_Center: {x: 0, y: 0.1, z: 0}
+--- !u!114 &1336795783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8665520025714300552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2549ad0776c34f94baf7de0450b17c7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Spend: 1
+  rotationSpeed: 1

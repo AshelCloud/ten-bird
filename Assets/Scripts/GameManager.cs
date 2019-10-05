@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -44,7 +45,7 @@ public class GameManager : Singleton<GameManager>
     private IEnumerator LoadYourAsyncScene(int level)
     {
         var stage = Resources.Load<GameObject>("Prefabs/Stages/Stage0" + level.ToString());
-        var pheonix = Resources.Load<GameObject>("Prefabs/Pheonix");
+        var pheonix = Resources.Load<GameObject>("Prefabs/Phoenix");
 
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("Game");
 
@@ -52,6 +53,7 @@ public class GameManager : Singleton<GameManager>
         {
             yield return null;
         }
+
         Instantiate(stage);
         Instantiate(pheonix);
     }
