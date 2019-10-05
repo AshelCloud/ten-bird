@@ -8,12 +8,4 @@ public class Nest : MonoBehaviour, IEventable
     {
         
     }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.CompareTag("Player"))
-        {
-            ActiveEvent();
-        }
-    }
 }

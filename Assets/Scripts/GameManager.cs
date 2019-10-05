@@ -34,11 +34,18 @@ public class GameManager : Singleton<GameManager>
         StartCoroutine(LoadYourAsyncScene(level));
     }
 
-    public GameCanvas GetGameCanvas()
+    public void SetBequite(bool onoff)
     {
         GameCanvas canvas = GameObject.Find("Canvas").GetComponent<GameCanvas>();
 
-        return canvas;
+        canvas.beQuiet.SetActive(onoff);
+    }
+
+    public void SetActive(bool onoff)
+    {
+        GameCanvas canvas = GameObject.Find("Canvas").GetComponent<GameCanvas>();
+
+        canvas.active.SetActive(onoff);
     }
 
     private IEnumerator LoadYourAsyncScene(int level)

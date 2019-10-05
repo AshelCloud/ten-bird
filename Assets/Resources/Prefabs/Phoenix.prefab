@@ -1045,7 +1045,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1.2
-  rotationSpeed: 180
+  rotationSpeed: 100
   animator: {fileID: 0}
   meshes: {fileID: 2549472204954892932}
   ui: {fileID: 2018294404724468584}

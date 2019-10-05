@@ -36,7 +36,11 @@ public class Player : MonoBehaviour
 
     void FixedUpdate()
     {
-        if(isDeath || isClear) { return; }
+        if(isDeath || isClear) 
+        {
+            rb.velocity = Vector3.zero;
+            return;
+        }
 
         float h = UltimateJoystick.GetHorizontalAxis("Move");
         float v = UltimateJoystick.GetVerticalAxis("Move");
@@ -57,19 +61,27 @@ public class Player : MonoBehaviour
         transform.Rotate(0f, h * rotationSpeed * Time.deltaTime, 0f);
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void Update()
     {
-        if(other.CompareTag("Nest") && !isClear)
+        
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Nest"))
         {
-            isClear = true;
-            StartCoroutine(Clear(other.transform.position));
+            if (isClear == false)
+            {
+                isClear = true;
+                StartCoroutine(Clear(collision.gameObject.transform.position));
+            }
         }
     }
 
     private IEnumerator Clear(Vector3 position)
     {
-        GameManager.Instance.GetGameCanvas().beQuiet.SetActive(true);
-        GameManager.Instance.GetGameCanvas().active.SetActive(false);
+        GameManager.Instance.SetBequite(true);
+        GameManager.Instance.SetActive(false);
         ui.SetActive(false);
 
         yield return new WaitForSeconds(2.5f);
@@ -78,7 +90,7 @@ public class Player : MonoBehaviour
 
         Instantiate(Resources.Load<GameObject>("Prefabs/Egg"), position, Quaternion.identity);
         meshes.SetActive(false);
-        GameManager.Instance.GetGameCanvas().beQuiet.SetActive(false);
+        GameManager.Instance.SetBequite(false);
 
         yield return new WaitForSeconds(0.5f);
 

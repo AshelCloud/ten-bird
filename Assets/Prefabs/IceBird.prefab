@@ -419,8 +419,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waypoints: []
   index: 0
-  speed: 1
+  speed: 0.7
   minDist: 0.1
+  hp: 0
 --- !u!65 &5715665400002079565
 BoxCollider:
   m_ObjectHideFlags: 0
