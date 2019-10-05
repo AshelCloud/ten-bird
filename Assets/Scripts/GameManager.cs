@@ -14,10 +14,7 @@ public class GameManager : Singleton<GameManager>
         isStart = false;
         isAllActiveWood = false;
         Screen.SetResolution(1080, 1920, true);
-    }
 
-    private void Start()
-    {
         DontDestroyOnLoad(gameObject);
     }
 

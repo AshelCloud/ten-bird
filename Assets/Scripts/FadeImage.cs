@@ -20,7 +20,7 @@ public class FadeImage : MonoBehaviour
     {
         if(fadeDir == FadeDirection.In)
         {
-            ActiveFadeAndLoadScene(fadeDir, "Main");
+            ActiveFadeAndLoadScene(fadeDir, "Select");
         }
         else
         {

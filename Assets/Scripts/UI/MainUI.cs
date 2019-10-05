@@ -11,7 +11,7 @@ public class MainUI : MonoBehaviour
 
     private void Start()
     {
-        if(GameManager.Instance.isStart)
+        if (GameManager.Instance.isStart)
         {
             LoadSelect();
             GameManager.Instance.FadeOut();
@@ -20,12 +20,13 @@ public class MainUI : MonoBehaviour
         {
             GameManager.Instance.isStart = true;
         }
+
+        SoundManager.Instance.PlayLoop(Resources.Load<AudioClip>("Sounds/suzaku"));
     }
 
     public void LoadSelect()
     {
-        mainObject.SetActive(false);
-        selectObject.SetActive(true);
+        SceneManager.LoadScene("Select");
     }
 
     public void ShowCredit()

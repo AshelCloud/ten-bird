@@ -4,7 +4,22 @@ using UnityEngine;
 
 public class SoundManager : Singleton<SoundManager>
 {
-    public AudioSource Audio { get; private set; }
+    private AudioSource _audio;
+    public AudioSource Audio
+    {
+        get
+        {
+            if(_audio == null)
+            {
+                _audio = GetComponent<AudioSource>();
+            }
+            return _audio;
+        }
+        set
+        {
+            _audio = value;
+        }
+    }
 
     private void Awake()
     {

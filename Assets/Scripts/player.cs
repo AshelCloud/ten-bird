@@ -74,6 +74,8 @@ public class Player : MonoBehaviour
 
         yield return new WaitForSeconds(2.5f);
 
+        SoundManager.Instance.PlayClip(Resources.Load<AudioClip>("Sounds/clear"));
+
         Instantiate(Resources.Load<GameObject>("Prefabs/Egg"), position, Quaternion.identity);
         meshes.SetActive(false);
         GameManager.Instance.GetGameCanvas().beQuiet.SetActive(false);
@@ -100,6 +102,7 @@ public class Player : MonoBehaviour
         var bullet = Instantiate(Resources.Load<Bullet>("Prefabs/Bullet"));
         bullet.transform.position = transform.position;
         bullet.SetForward(transform.forward);
+        SoundManager.Instance.PlayClip(Resources.Load<AudioClip>("Sounds/attack_sound"));
 
         yield return new WaitForSeconds(0.75f);
         

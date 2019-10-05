@@ -115,8 +115,12 @@ public class Anivia : MonoBehaviour
     {
         collision.gameObject.GetComponent<Player>().animator.SetBool("Death", true);
         collision.gameObject.GetComponent<Player>().isDeath = true;
+        collision.gameObject.GetComponent<SphereCollider>().enabled = false;
+        collision.gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
 
-        yield return new WaitForSeconds(3f);
+        SoundManager.Instance.PlayClip(Resources.Load<AudioClip>("Sounds/die"));
+
+        yield return new WaitForSeconds(2f);
 
         GameManager.Instance.FadeAndLoadMainScene();
     }
