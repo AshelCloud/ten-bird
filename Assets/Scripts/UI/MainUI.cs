@@ -8,12 +8,14 @@ public class MainUI : MonoBehaviour
     public GameObject mainObject;
     public GameObject selectObject;
 
-    private void Update()
+    public void LoadSelect()
     {
-        if (Input.GetMouseButtonDown(0) && SceneManager.GetActiveScene().buildIndex == 0)
-        {
-            mainObject.SetActive(false);
-            selectObject.SetActive(true);
-        }
+        mainObject.SetActive(false);
+        selectObject.SetActive(true);
+    }
+
+    public void ShowCredit()
+    {
+        
     }
 }
