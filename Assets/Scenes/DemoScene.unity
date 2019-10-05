@@ -513,6 +513,7 @@ MonoBehaviour:
   - {fileID: 968265412}
   index: 0
   speed: 1
+  minDist: 0.2
 --- !u!1 &1685390285
 GameObject:
   m_ObjectHideFlags: 0

@@ -12,6 +12,7 @@ public class Anivia : MonoBehaviour
     private Rigidbody rb;
 
     public float speed = 1f;
+    public float minDist = 1f;
 
     private void Awake()
     {
@@ -24,7 +25,7 @@ public class Anivia : MonoBehaviour
     {
         UpdateAgent();
         
-        if(Vector3.Distance(target.transform.position, transform.position) < 0.01f)
+        if(Vector3.Distance(target.transform.position, transform.position) < minDist)
         {
             SetNextTarget();
         }
@@ -34,6 +35,7 @@ public class Anivia : MonoBehaviour
     {
         Transform t = target.transform;
         t.position = new Vector3(t.position.x, transform.position.y, t.position.z);
+
         transform.LookAt(t);
         transform.position += transform.forward * speed * Time.deltaTime;
     }
