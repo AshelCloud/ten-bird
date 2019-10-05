@@ -704,7 +704,8 @@ GameObject:
   - component: {fileID: 5627605443991495835}
   - component: {fileID: 2347297434125617633}
   - component: {fileID: 8296172668497089261}
-  - component: {fileID: 8296172668497089260}
+  - component: {fileID: -197534732219721826}
+  - component: {fileID: 1630755886314390272}
   m_Layer: 0
   m_Name: Pheonix
   m_TagString: Untagged
@@ -766,10 +767,24 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
---- !u!65 &8296172668497089260
-BoxCollider:
+--- !u!114 &-197534732219721826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8665520025714300552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2549ad0776c34f94baf7de0450b17c7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Spend: 1
+  rotationSpeed: 180
+--- !u!135 &1630755886314390272
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -779,5 +794,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.26, y: 0.3, z: 0.3}
+  m_Radius: 0.2
   m_Center: {x: 0, y: 0.1, z: 0}
