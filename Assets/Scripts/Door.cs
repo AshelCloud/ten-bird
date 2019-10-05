@@ -19,10 +19,10 @@ public class Door : MonoBehaviour, IEventable
 
     private void Start()
     {
-        Anima.SetBool("Open", true);
     }
 
     public void ActiveEvent()
     {
+        Anima.SetBool("Open", true);
     }
 }

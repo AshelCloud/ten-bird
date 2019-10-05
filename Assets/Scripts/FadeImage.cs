@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class FadeScreen : MonoBehaviour
+public class FadeImage : MonoBehaviour
 {
     public Image fadeOutUIImage;
     public float fadeSpeed = 0.8f;
