@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3546367135151991804}
   - component: {fileID: 8226051528774333681}
   - component: {fileID: 7433256972513749213}
+  - component: {fileID: 3758371338405226328}
   m_Layer: 0
   m_Name: diff1_under (7)
   m_TagString: Untagged
@@ -97,6 +98,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!64 &3758371338405226328
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 116555960929470417}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -6281424698479989189, guid: f787189551d1bcb40833ab9c74aa6b5b, type: 3}
 --- !u!1 &184530670920409646
 GameObject:
   m_ObjectHideFlags: 0
@@ -109,6 +124,7 @@ GameObject:
   - component: {fileID: 7732569541027361864}
   - component: {fileID: 7349731839845834716}
   - component: {fileID: 2306848584264196406}
+  - component: {fileID: 8714169209854217446}
   m_Layer: 0
   m_Name: wall2_under
   m_TagString: Untagged
@@ -194,6 +210,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!64 &8714169209854217446
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184530670920409646}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -6281424698479989189, guid: f787189551d1bcb40833ab9c74aa6b5b, type: 3}
 --- !u!1 &259876456017633151
 GameObject:
   m_ObjectHideFlags: 0
@@ -206,6 +236,7 @@ GameObject:
   - component: {fileID: 6011364049199008623}
   - component: {fileID: 8631341257165616276}
   - component: {fileID: 8467742046652112625}
+  - component: {fileID: 5956076052773000317}
   m_Layer: 0
   m_Name: wall1_under
   m_TagString: Untagged
@@ -291,6 +322,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!64 &5956076052773000317
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 259876456017633151}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -6281424698479989189, guid: f787189551d1bcb40833ab9c74aa6b5b, type: 3}
 --- !u!1 &1118130402694942197
 GameObject:
   m_ObjectHideFlags: 0
@@ -303,6 +348,7 @@ GameObject:
   - component: {fileID: 6636062850423188169}
   - component: {fileID: 8983281080057011498}
   - component: {fileID: 2444739432622880643}
+  - component: {fileID: 2640565483726325972}
   m_Layer: 0
   m_Name: diff1 (1)
   m_TagString: Untagged
@@ -388,6 +434,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!64 &2640565483726325972
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1118130402694942197}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -6281424698479989189, guid: f787189551d1bcb40833ab9c74aa6b5b, type: 3}
 --- !u!1 &1422166840184480463
 GameObject:
   m_ObjectHideFlags: 0
@@ -400,6 +460,7 @@ GameObject:
   - component: {fileID: 7964120635489494170}
   - component: {fileID: 4616895068048701467}
   - component: {fileID: 8943846383643613137}
+  - component: {fileID: 3579449431111417903}
   m_Layer: 0
   m_Name: diff1 (4)
   m_TagString: Untagged
@@ -485,6 +546,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!64 &3579449431111417903
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1422166840184480463}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -6281424698479989189, guid: f787189551d1bcb40833ab9c74aa6b5b, type: 3}
 --- !u!1 &2246596315408101870
 GameObject:
   m_ObjectHideFlags: 0
@@ -497,6 +572,7 @@ GameObject:
   - component: {fileID: 2473825769001130257}
   - component: {fileID: 4113721095470699044}
   - component: {fileID: 4603891049528149154}
+  - component: {fileID: 4510357339108294248}
   m_Layer: 0
   m_Name: diff1_under (4)
   m_TagString: Untagged
@@ -582,6 +658,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!64 &4510357339108294248
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2246596315408101870}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -6281424698479989189, guid: f787189551d1bcb40833ab9c74aa6b5b, type: 3}
 --- !u!1 &2862586883627728479
 GameObject:
   m_ObjectHideFlags: 0
@@ -594,6 +684,7 @@ GameObject:
   - component: {fileID: 7971616894582617539}
   - component: {fileID: 2148176713626194731}
   - component: {fileID: 4730622571965321194}
+  - component: {fileID: 1102414282665879949}
   m_Layer: 0
   m_Name: diff1 (5)
   m_TagString: Untagged
@@ -679,6 +770,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!64 &1102414282665879949
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2862586883627728479}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -6281424698479989189, guid: f787189551d1bcb40833ab9c74aa6b5b, type: 3}
 --- !u!1 &2960897581901453226
 GameObject:
   m_ObjectHideFlags: 0
@@ -691,6 +796,7 @@ GameObject:
   - component: {fileID: 6576967477907401036}
   - component: {fileID: 1810121282981096813}
   - component: {fileID: 4617074282719418692}
+  - component: {fileID: 443751884300597295}
   m_Layer: 0
   m_Name: diff1_under (5)
   m_TagString: Untagged
@@ -776,6 +882,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!64 &443751884300597295
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2960897581901453226}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -6281424698479989189, guid: f787189551d1bcb40833ab9c74aa6b5b, type: 3}
 --- !u!1 &3137972915250695427
 GameObject:
   m_ObjectHideFlags: 0
@@ -788,6 +908,7 @@ GameObject:
   - component: {fileID: 4483772854785565868}
   - component: {fileID: 227830720865449601}
   - component: {fileID: 6002716346134666285}
+  - component: {fileID: 6706305760255462944}
   m_Layer: 0
   m_Name: diff1 (6)
   m_TagString: Untagged
@@ -873,6 +994,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!64 &6706305760255462944
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3137972915250695427}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -6281424698479989189, guid: f787189551d1bcb40833ab9c74aa6b5b, type: 3}
 --- !u!1 &3138727488244885961
 GameObject:
   m_ObjectHideFlags: 0
@@ -885,6 +1020,7 @@ GameObject:
   - component: {fileID: 7781561541532802163}
   - component: {fileID: 929239743714407113}
   - component: {fileID: 7393049543812771421}
+  - component: {fileID: 5669842274553323115}
   m_Layer: 0
   m_Name: diff1 (2)
   m_TagString: Untagged
@@ -970,6 +1106,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!64 &5669842274553323115
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3138727488244885961}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -6281424698479989189, guid: f787189551d1bcb40833ab9c74aa6b5b, type: 3}
 --- !u!1 &3273642094246668441
 GameObject:
   m_ObjectHideFlags: 0
@@ -982,6 +1132,7 @@ GameObject:
   - component: {fileID: 2189525137560035820}
   - component: {fileID: 7461598745768828134}
   - component: {fileID: 6992851732058888079}
+  - component: {fileID: 2218980249974207728}
   m_Layer: 0
   m_Name: diff1 (7)
   m_TagString: Untagged
@@ -1067,6 +1218,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!64 &2218980249974207728
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3273642094246668441}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -6281424698479989189, guid: f787189551d1bcb40833ab9c74aa6b5b, type: 3}
 --- !u!1 &3702959822834973454
 GameObject:
   m_ObjectHideFlags: 0
@@ -1079,6 +1244,7 @@ GameObject:
   - component: {fileID: 4653946502110799522}
   - component: {fileID: 1922400772257228938}
   - component: {fileID: 1787606140240279495}
+  - component: {fileID: 6010297262977477672}
   m_Layer: 0
   m_Name: diff1_under (1)
   m_TagString: Untagged
@@ -1164,6 +1330,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!64 &6010297262977477672
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3702959822834973454}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -6281424698479989189, guid: f787189551d1bcb40833ab9c74aa6b5b, type: 3}
 --- !u!1 &3822796194071571112
 GameObject:
   m_ObjectHideFlags: 0
@@ -1176,6 +1356,7 @@ GameObject:
   - component: {fileID: 2803027546560833847}
   - component: {fileID: 7872096695702582474}
   - component: {fileID: 5163149113614288203}
+  - component: {fileID: 4461498181282679925}
   m_Layer: 0
   m_Name: diff1
   m_TagString: Untagged
@@ -1261,6 +1442,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!64 &4461498181282679925
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3822796194071571112}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -6281424698479989189, guid: f787189551d1bcb40833ab9c74aa6b5b, type: 3}
 --- !u!1 &3906929298292634008
 GameObject:
   m_ObjectHideFlags: 0
@@ -1389,6 +1584,7 @@ GameObject:
   - component: {fileID: 4990536905395009040}
   - component: {fileID: 5462698628691808203}
   - component: {fileID: 5137952675934550121}
+  - component: {fileID: 5783806785891297875}
   m_Layer: 0
   m_Name: diff1_under (3)
   m_TagString: Untagged
@@ -1474,6 +1670,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!64 &5783806785891297875
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4351894746467497683}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -6281424698479989189, guid: f787189551d1bcb40833ab9c74aa6b5b, type: 3}
 --- !u!1 &4933788872389458210
 GameObject:
   m_ObjectHideFlags: 0
@@ -1486,6 +1696,7 @@ GameObject:
   - component: {fileID: 1347153707803243119}
   - component: {fileID: 2102082327300043949}
   - component: {fileID: 459874344143250356}
+  - component: {fileID: 2691013080918647885}
   m_Layer: 0
   m_Name: diff1_under
   m_TagString: Untagged
@@ -1571,6 +1782,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!64 &2691013080918647885
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4933788872389458210}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -6281424698479989189, guid: f787189551d1bcb40833ab9c74aa6b5b, type: 3}
 --- !u!1 &5226968797385213784
 GameObject:
   m_ObjectHideFlags: 0
@@ -1583,6 +1808,7 @@ GameObject:
   - component: {fileID: 7876880006244441998}
   - component: {fileID: 3066096747450062619}
   - component: {fileID: 1875616536971920694}
+  - component: {fileID: 422763910216170619}
   m_Layer: 0
   m_Name: wall0
   m_TagString: Untagged
@@ -1668,6 +1894,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!64 &422763910216170619
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5226968797385213784}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -6281424698479989189, guid: f787189551d1bcb40833ab9c74aa6b5b, type: 3}
 --- !u!1 &5673273354044322276
 GameObject:
   m_ObjectHideFlags: 0
@@ -1680,6 +1920,7 @@ GameObject:
   - component: {fileID: 745761772280947845}
   - component: {fileID: 5104634422709979422}
   - component: {fileID: 4861598769024299247}
+  - component: {fileID: 4196005031518222363}
   m_Layer: 0
   m_Name: diff1_under (2)
   m_TagString: Untagged
@@ -1765,6 +2006,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!64 &4196005031518222363
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5673273354044322276}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -6281424698479989189, guid: f787189551d1bcb40833ab9c74aa6b5b, type: 3}
 --- !u!1 &5940854884717738397
 GameObject:
   m_ObjectHideFlags: 0
@@ -1777,6 +2032,7 @@ GameObject:
   - component: {fileID: 4734127692363885229}
   - component: {fileID: 5197165543971673210}
   - component: {fileID: 6763897092962622943}
+  - component: {fileID: 7254270985169024384}
   m_Layer: 0
   m_Name: wall0_under
   m_TagString: Untagged
@@ -1862,6 +2118,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!64 &7254270985169024384
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5940854884717738397}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -6281424698479989189, guid: f787189551d1bcb40833ab9c74aa6b5b, type: 3}
 --- !u!1 &7709238476152222293
 GameObject:
   m_ObjectHideFlags: 0
@@ -1874,6 +2144,7 @@ GameObject:
   - component: {fileID: 6878391268699727249}
   - component: {fileID: 4199515355179726589}
   - component: {fileID: 1551041053667789704}
+  - component: {fileID: 1048227945774110591}
   m_Layer: 0
   m_Name: diff1 (3)
   m_TagString: Untagged
@@ -1959,6 +2230,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!64 &1048227945774110591
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7709238476152222293}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -6281424698479989189, guid: f787189551d1bcb40833ab9c74aa6b5b, type: 3}
 --- !u!1 &8135291747525211419
 GameObject:
   m_ObjectHideFlags: 0
@@ -1971,6 +2256,7 @@ GameObject:
   - component: {fileID: 6478874294543118921}
   - component: {fileID: 6978029827393486650}
   - component: {fileID: 8317108823641067436}
+  - component: {fileID: 4852781599022495651}
   m_Layer: 0
   m_Name: diff1_under (6)
   m_TagString: Untagged
@@ -2056,6 +2342,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!64 &4852781599022495651
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8135291747525211419}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -6281424698479989189, guid: f787189551d1bcb40833ab9c74aa6b5b, type: 3}
 --- !u!1 &8241081146646367761
 GameObject:
   m_ObjectHideFlags: 0
@@ -2068,6 +2368,7 @@ GameObject:
   - component: {fileID: 8915311334268187222}
   - component: {fileID: 5173930134434960775}
   - component: {fileID: 2243435925811272444}
+  - component: {fileID: 5486587832175194737}
   m_Layer: 0
   m_Name: wall3_under
   m_TagString: Untagged
@@ -2153,6 +2454,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!64 &5486587832175194737
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8241081146646367761}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -6281424698479989189, guid: f787189551d1bcb40833ab9c74aa6b5b, type: 3}
 --- !u!1 &8477381981382542587
 GameObject:
   m_ObjectHideFlags: 0
@@ -2165,6 +2480,7 @@ GameObject:
   - component: {fileID: 1098864272039100961}
   - component: {fileID: 7105407807650287701}
   - component: {fileID: 8394413696351052918}
+  - component: {fileID: 7078574843223777293}
   m_Layer: 0
   m_Name: wall3
   m_TagString: Untagged
@@ -2250,6 +2566,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!64 &7078574843223777293
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8477381981382542587}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -6281424698479989189, guid: f787189551d1bcb40833ab9c74aa6b5b, type: 3}
 --- !u!1 &8481834682886320088
 GameObject:
   m_ObjectHideFlags: 0
@@ -2262,6 +2592,7 @@ GameObject:
   - component: {fileID: 5742881416744918883}
   - component: {fileID: 3909481618727975302}
   - component: {fileID: 4519689111693690469}
+  - component: {fileID: 7972806058886912149}
   m_Layer: 0
   m_Name: wall1
   m_TagString: Untagged
@@ -2347,6 +2678,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!64 &7972806058886912149
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8481834682886320088}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -6281424698479989189, guid: f787189551d1bcb40833ab9c74aa6b5b, type: 3}
 --- !u!1 &9095507856775168004
 GameObject:
   m_ObjectHideFlags: 0
@@ -2359,6 +2704,7 @@ GameObject:
   - component: {fileID: 2454891897217350096}
   - component: {fileID: 2846962330993277272}
   - component: {fileID: 1631233869139617192}
+  - component: {fileID: 585585121056643615}
   m_Layer: 0
   m_Name: wall2
   m_TagString: Untagged
@@ -2444,3 +2790,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!64 &585585121056643615
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9095507856775168004}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -6281424698479989189, guid: f787189551d1bcb40833ab9c74aa6b5b, type: 3}
