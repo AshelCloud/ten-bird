@@ -706,10 +706,11 @@ GameObject:
   - component: {fileID: 8296172668497089261}
   - component: {fileID: -197534732219721826}
   - component: {fileID: 1630755886314390272}
+  - component: {fileID: -8059903312976851628}
   - component: {fileID: 1336795783}
   m_Layer: 0
   m_Name: Phoenix
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -793,6 +794,19 @@ SphereCollider:
   m_GameObject: {fileID: 8665520025714300552}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.2
+  m_Center: {x: 0, y: 0.1, z: 0}
+--- !u!135 &-8059903312976851628
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8665520025714300552}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.2

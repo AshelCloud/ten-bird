@@ -12,6 +12,8 @@ public class GameCanvas : MonoBehaviour
         int activeWoodCnt = 0;
         var woods = GameObject.FindGameObjectsWithTag("Firewood");
 
+        if(woods.Length == 0) { return; }
+
         for(int i = 0; i < woods.Length; i ++)
         {
             if(woods[i].GetComponent<Firewood>().isActive)
@@ -21,6 +23,14 @@ public class GameCanvas : MonoBehaviour
         }
 
         firewoodText.text = activeWoodCnt.ToString() + "/" + woods.Length.ToString();
-            
+
+        if(woods.Length == activeWoodCnt)
+        {
+            GameManager.Instance.isAllActiveWood = true;
+        }
+        else
+        {
+            GameManager.Instance.isAllActiveWood = false;
+        }
     }
 }

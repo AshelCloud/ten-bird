@@ -8,6 +8,19 @@ public class MainUI : MonoBehaviour
     public GameObject mainObject;
     public GameObject selectObject;
 
+    private void Start()
+    {
+        if(GameManager.Instance.isStart)
+        {
+            LoadSelect();
+            GameManager.Instance.FadeOut();
+        }
+        else
+        {
+            GameManager.Instance.isStart = true;
+        }
+    }
+
     public void LoadSelect()
     {
         mainObject.SetActive(false);

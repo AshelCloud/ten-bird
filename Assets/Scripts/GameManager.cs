@@ -6,35 +6,29 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : Singleton<GameManager>
 {
-    [SerializeField]
-    private FadeImage _fade;
-    private FadeImage Fade
-    {
-        get
-        {
-            if(_fade == null)
-            {
-                _fade = GameObject.FindObjectOfType(typeof(FadeImage)) as FadeImage;
-                if(_fade == null)
-                {
-                    _fade = Instantiate(Resources.Load<FadeImage>("Prefabs/Fade"));
-                }
-            }
-
-            return _fade;
-        }
-    }
+    public bool isAllActiveWood { get; set; }
+    public bool isStart { get; set; }
 
     private void Awake()
     {
+        isStart = false;
+        isAllActiveWood = false;
         Screen.SetResolution(1080, 1920, true);
     }
 
     private void Start()
     {
-        Fade.fadeSpeed = 0.8f;
-
         DontDestroyOnLoad(gameObject);
+    }
+
+    public void FadeOut()
+    {
+        Instantiate(Resources.Load<GameObject>("Prefabs/FadeOut"));
+    }
+
+    public void FadeAndLoadMainScene()
+    {
+        Instantiate(Resources.Load<GameObject>("Prefabs/FadeIn"));
     }
 
     public void LoadLevelScene(int level)

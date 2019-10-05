@@ -14,9 +14,18 @@ public class FadeImage : MonoBehaviour
         Out // Alpha = 0
     }
 
-    void OnEnable()
+    public FadeDirection fadeDir;
+
+    private void OnEnable()
     {
-        StartCoroutine(Fade(FadeDirection.Out));
+        if(fadeDir == FadeDirection.In)
+        {
+            ActiveFadeAndLoadScene(fadeDir, "Main");
+        }
+        else
+        {
+            StartCoroutine(Fade(fadeDir));
+        }
     }
 
     private IEnumerator Fade(FadeDirection fadeDirection)

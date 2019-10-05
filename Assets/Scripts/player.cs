@@ -9,10 +9,13 @@ public class Player : MonoBehaviour
     public float rotationSpeed = 1f;
     private Rigidbody rb;
     private Vector3 m_CamForward;
+    public Animator animator;
+
     private void Awake()
     {
         startPoint = Vector3.zero;
         rb = GetComponent<Rigidbody>();
+        animator = GetComponent<Animator>();
         m_CamForward = Vector3.Scale(Camera.main.transform.forward, new Vector3(1, 0, 1)).normalized;
     }
 
@@ -30,8 +33,17 @@ public class Player : MonoBehaviour
 
         m_CamForward = Vector3.Scale(Camera.main.transform.forward, new Vector3(1, 0, 1)).normalized;
         Vector3 move = v * m_CamForward + h * Camera.main.transform.right;
+        if(move == Vector3.zero)
+        {
+            animator.SetBool("Move", false);    
+        }
+        else
+        {
+            animator.SetBool("Move", true);
+        }
 
         rb.velocity = move;
+
         
         transform.Rotate(0f, h * rotationSpeed * Time.deltaTime, 0f);
     }

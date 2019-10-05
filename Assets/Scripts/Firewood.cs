@@ -21,7 +21,6 @@ public class Firewood : MonoBehaviour, IEventable
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.tag);
         if(other.CompareTag("Player"))
         {
             ActiveEvent();

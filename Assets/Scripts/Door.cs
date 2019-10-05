@@ -19,6 +19,14 @@ public class Door : MonoBehaviour, IEventable
 
     private void Start()
     {
+        StartCoroutine(WaitActiveWood());
+    }
+
+    private IEnumerator WaitActiveWood()
+    {
+        yield return new WaitUntil( () => GameManager.Instance.isAllActiveWood == true);
+
+        ActiveEvent();
     }
 
     public void ActiveEvent()

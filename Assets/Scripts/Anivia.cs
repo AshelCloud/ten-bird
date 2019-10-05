@@ -61,4 +61,21 @@ public class Anivia : MonoBehaviour
         index += dir;
         target = waypoints[index];
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.CompareTag("Player"))
+        {
+            StartCoroutine(ActiveDeath(collision));
+        }
+    }
+
+    private IEnumerator ActiveDeath(Collision collision)
+    {
+        collision.gameObject.GetComponent<Player>().animator.SetBool("Death", true);
+
+        yield return new WaitForSeconds(3f);
+
+        GameManager.Instance.FadeAndLoadMainScene();
+    }
 }
