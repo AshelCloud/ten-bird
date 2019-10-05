@@ -4,7 +4,7 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - fade: {fileID: 4690477857773313036, guid: 97cf85be7b524424695dc731b44070a8, type: 3}
+  - _fade: {fileID: 4690477857773313036, guid: 97cf85be7b524424695dc731b44070a8, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

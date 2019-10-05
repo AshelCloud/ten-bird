@@ -43,7 +43,12 @@ public class FadeScreen : MonoBehaviour
         }
     }
 
-    public IEnumerator FadeAndLoadScene(FadeDirection fadeDirection, string sceneToLoad)
+    public void ActiveFadeAndLoadScene(FadeDirection fadeDirection, string sceneToLoad)
+    {
+        StartCoroutine(FadeAndLoadScene(fadeDirection, sceneToLoad));
+    }
+
+    private IEnumerator FadeAndLoadScene(FadeDirection fadeDirection, string sceneToLoad)
     {
         yield return Fade(fadeDirection);
         SceneManager.LoadScene(sceneToLoad);

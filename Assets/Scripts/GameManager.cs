@@ -13,6 +13,10 @@ public class GameManager : MonoBehaviour
             if(_fade == null)
             {
                 _fade = GameObject.FindObjectOfType(typeof(FadeScreen)) as FadeScreen;
+                if(_fade == null)
+                {
+                    _fade = Instantiate(Resources.Load<FadeScreen>("Prefabs/Fade"));
+                }
             }
 
             return _fade;
@@ -21,6 +25,8 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        Fade.fadeSpeed = 0.8f;
+
         DontDestroyOnLoad(gameObject);
     }
 }
