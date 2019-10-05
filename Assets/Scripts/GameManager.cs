@@ -26,6 +26,7 @@ public class GameManager : Singleton<GameManager>
     public void FadeAndLoadMainScene()
     {
         Instantiate(Resources.Load<GameObject>("Prefabs/FadeIn"));
+        SoundManager.Instance.PlayLoop(Resources.Load<AudioClip>("Sounds/suzaku"));
     }
 
     public void LoadLevelScene(int level)
