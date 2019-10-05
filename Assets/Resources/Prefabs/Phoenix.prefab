@@ -193,7 +193,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -352841068389721766, guid: 9e8a0a250ca7d44bbbda2ca868f627f5, type: 3}
+  - {fileID: 2100000, guid: 999d1d547f2c98e4f94c6c5647c2860b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -278,7 +278,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -352841068389721766, guid: 9e8a0a250ca7d44bbbda2ca868f627f5, type: 3}
+  - {fileID: 2100000, guid: 999d1d547f2c98e4f94c6c5647c2860b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -456,7 +456,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -352841068389721766, guid: 9e8a0a250ca7d44bbbda2ca868f627f5, type: 3}
+  - {fileID: 2100000, guid: 999d1d547f2c98e4f94c6c5647c2860b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -541,7 +541,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -352841068389721766, guid: 9e8a0a250ca7d44bbbda2ca868f627f5, type: 3}
+  - {fileID: 2100000, guid: 999d1d547f2c98e4f94c6c5647c2860b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -656,7 +656,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -352841068389721766, guid: 9e8a0a250ca7d44bbbda2ca868f627f5, type: 3}
+  - {fileID: 2100000, guid: 999d1d547f2c98e4f94c6c5647c2860b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -708,7 +708,7 @@ GameObject:
   - component: {fileID: 1630755886314390272}
   - component: {fileID: 1336795783}
   m_Layer: 0
-  m_Name: Pheonix
+  m_Name: Phoenix
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
