@@ -31,6 +31,7 @@ public class GameManager : Singleton<GameManager>
 
     public void LoadLevelScene(int level)
     {
+        isAllActiveWood = false;
         StartCoroutine(LoadYourAsyncScene(level));
     }
 

@@ -7,7 +7,7 @@ public class Firewood : MonoBehaviour, IEventable
     public GameObject fire;
     public bool isActive { get; set; }
 
-    private void Awake()
+    private void Start()
     {
         isActive = false;
     }
