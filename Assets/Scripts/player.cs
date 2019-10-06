@@ -66,14 +66,14 @@ public class Player : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.CompareTag("Nest"))
+        if (other.CompareTag("Nest"))
         {
             if (isClear == false)
             {
                 isClear = true;
-                StartCoroutine(Clear(collision.gameObject.transform.position));
+                StartCoroutine(Clear(other.transform.position));
             }
         }
     }
